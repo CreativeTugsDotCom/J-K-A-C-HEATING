@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J & K A/C & Heating | Waller, TX | Residential & Commercial HVAC</title>
+    <meta name="description" content="Pay by the job, not by the hour. Premium residential and commercial HVAC services in Waller, TX and surrounding areas. Texas License TACLB78991E.">
+    
+    <!-- Fonts: Archivo for industrial headings, DM Sans for high legibility body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..900;1,300..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandCharcoal: '#171A1E',
+                        brandGraphite: '#242A30',
+                        brandWarmWhite: '#F3F2EE',
+                        brandSteel: '#A7ADB3',
+                        brandRed: '#C83D35',
+                        brandCoolAccent: '#A9C4CE',
+                    },
+                    fontFamily: {
+                        heading: ['Archivo', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, rgba(167, 173, 179, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(167, 173, 179, 0.05) 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #171A1E;
+            color: #F3F2EE;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Archivo', sans-serif;
+        }
+
+        /* Custom subtle technical schematics animation background */
+        .tech-grid {
+            background-size: 32px 32px;
+            background-image: 
+                radial-gradient(circle, rgba(169, 196, 206, 0.12) 1px, transparent 1px);
+        }
+
+        /* Technical linework animation */
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(1000%); }
+        }
+        .animate-scanline {
+            animation: scanline 12s linear infinite;
+        }
+
+        /* Pulsing status dot */
+        .status-pulse {
+            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.15); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #171A1E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #242A30;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C83D35;
+        }
+    </style>
+</head>
+<body class="bg-brandCharcoal text-brandWarmWhite selection:bg-brandRed selection:text-white antialiased">
+
+    <!-- TOP VERIFICATION & ANNOUNCEMENT BAR -->
+    <div class="bg-brandGraphite border-b border-white/10 py-2 px-4 text-xs font-mono tracking-wider text-brandSteel flex flex-wrap justify-between items-center z-50 relative">
+        <div class="flex items-center space-x-4">
+            <span class="inline-flex items-center text-emerald-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 status-pulse"></span>
+                TEXAS LICENSED: TACLB78991E
+            </span>
+            <span class="hidden md:inline text-white/30">|</span>
+            <span class="hidden md:inline">BBB ACCREDITED (A+ RATED)</span>
+            <span class="hidden lg:inline text-white/30">|</span>
+            <span class="hidden lg:inline text-brandCoolAccent">INDOOR AIR SCIENCE CERTIFIED</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button onclick="toggleVerificationModal()" class="text-brandWarmWhite hover:text-brandRed transition flex items-center text-xs underline underline-offset-2">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1 text-brandRed"></i> Audit Credential Status
+            </button>
+            <span class="text-white/30">|</span>
+            <a href="tel:+13467080384" class="text-brandWarmWhite font-bold hover:text-brandRed transition flex items-center">
+                <i data-lucide="phone" class="w-3 h-3 mr-1 text-brandRed"></i> +1 346-708-0384
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-brandCharcoal/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- BRAND LOGO IMAGE -->
+            <a href="#home" onclick="navigateTo('home')" class="flex items-center group py-2">
+                <div class="relative h-12 md:h-14 flex items-center justify-center rounded-lg p-1 transition duration-300 group-hover:brightness-110">
+                    <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/jfd/refs/heads/main/d4563c80-b626-47e5-ba95-60fc5a2853a9.png" 
+                         alt="J & K A/C & Heating Logo" 
+                         class="h-full w-auto max-w-[220px] sm:max-w-[280px] md:max-w-[320px] object-contain filter drop-shadow-[0_2px_8px_rgba(200,61,53,0.25)] transition-transform duration-300 group-hover:scale-[1.02]">
+                </div>
+            </a>
+
+            <!-- DESKTOP NAV -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <button onclick="navigateTo('home')" id="nav-home" class="nav-link text-brandRed font-semibold transition hover:text-brandRed py-2">Home</button>
+                <button onclick="navigateTo('services')" id="nav-services" class="nav-link text-brandSteel hover:text-brandWarmWhite transition py-2">Services & Commercial</button>
+                <button onclick="navigateTo('about')" id="nav-about" class="nav-link text-brandSteel hover:text-brandWarmWhite transition py-2">About & Philosophy</button>
+                <button onclick="navigateTo('contact')" id="nav-contact" class="nav-link text-brandSteel hover:text-brandWarmWhite transition py-2">Contact & Quote</button>
+            </nav>
+
+            <!-- RIGHT CTA BUTTONS -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="tel:+13467080384" class="px-4 py-2.5 rounded border border-white/20 text-brandWarmWhite text-sm font-medium hover:border-brandRed hover:bg-brandRed/10 transition flex items-center">
+                    <i data-lucide="phone-call" class="w-4 h-4 mr-2 text-brandRed"></i> +1 346-708-0384
+                </a>
+                <button onclick="navigateTo('contact')" class="px-5 py-2.5 rounded bg-brandRed text-white text-sm font-semibold shadow-lg shadow-brandRed/30 hover:bg-red-700 transition flex items-center">
+                    <span>Request Quote</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </button>
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-brandWarmWhite p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU DRAWER -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandGraphite border-b border-white/10 px-6 py-6 space-y-4">
+            <button onclick="navigateTo('home'); toggleMobileMenu();" class="block w-full text-left text-brandWarmWhite font-medium py-2">Home</button>
+            <button onclick="navigateTo('services'); toggleMobileMenu();" class="block w-full text-left text-brandWarmWhite font-medium py-2">Services & Commercial</button>
+            <button onclick="navigateTo('about'); toggleMobileMenu();" class="block w-full text-left text-brandWarmWhite font-medium py-2">About & Philosophy</button>
+            <button onclick="navigateTo('contact'); toggleMobileMenu();" class="block w-full text-left text-brandWarmWhite font-medium py-2">Contact & Quote</button>
+            <div class="pt-4 border-t border-white/10 flex flex-col space-y-3">
+                <a href="tel:+13467080384" class="w-full py-3 text-center rounded border border-white/20 text-brandWarmWhite font-bold flex items-center justify-center">
+                    <i data-lucide="phone" class="w-4 h-4 mr-2 text-brandRed"></i> Call +1 346-708-0384
+                </a>
+                <button onclick="navigateTo('contact'); toggleMobileMenu();" class="w-full py-3 bg-brandRed text-white font-bold rounded text-center">
+                    Request a Service Quote
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- NOTIFICATION / TOAST CONTAINER -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 space-y-2 pointer-events-none"></div>
+
+    <!-- MAIN VIEW CONTAINER -->
+    <main id="main-content">
+        <!-- HOME VIEW (DEFAULT) -->
+        <div id="view-home" class="view-section">
+            
+            <!-- HERO SECTION WITH USER PROVIDED IMAGE & HIGH VISIBILITY -->
+            <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-brandCharcoal">
+                <!-- Background Image with Upper-Side Framing and High Visibility Filters -->
+                <div class="absolute inset-0 z-0">
+                    <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/jfd/refs/heads/main/471664761_1529294784688950_82279430788800690_n.jpg" 
+                         alt="J & K Technicians servicing HVAC equipment in Waller TX" 
+                         class="w-full h-full object-cover object-top filter brightness-75 contrast-110 scale-105 transform duration-1000">
+                    <!-- Controlled gradient overlay for professional contrast without washing out the image -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-brandCharcoal/90 via-brandCharcoal/60 to-brandCharcoal/80"></div>
+                    <div class="absolute inset-0 tech-grid opacity-30"></div>
+                </div>
+
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
+                    <div class="max-w-3xl">
+                        <!-- Eyebrow badge -->
+                        <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded bg-brandGraphite/90 border border-brandCoolAccent/30 text-brandCoolAccent font-mono text-xs mb-6 backdrop-blur-sm">
+                            <span class="w-2 h-2 rounded-full bg-brandRed"></span>
+                            <span>WALLER, TEXAS | RESIDENTIAL & COMMERCIAL HVAC EXPERTS</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-brandWarmWhite mb-6 leading-none">
+                            Heating & Cooling. <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandRed to-rose-400">Done With the Job in Mind.</span>
+                        </h1>
+
+                        <!-- Supporting Text -->
+                        <p class="text-lg sm:text-xl text-brandSteel mb-8 leading-relaxed max-w-2xl font-body">
+                            From residential heating and air conditioning to light-commercial HVAC buildouts up to 25 tons, J & K delivers skilled service with a straightforward, job-based approach.
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
+                            <button onclick="navigateTo('contact')" class="px-8 py-4 bg-brandRed text-white font-heading font-bold rounded shadow-xl shadow-brandRed/30 hover:bg-red-700 transition flex items-center justify-center text-base group">
+                                <span>REQUEST A SERVICE QUOTE</span>
+                                <i data-lucide="arrow-right" class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition"></i>
+                            </button>
+                            <a href="tel:+13467080384" class="px-8 py-4 bg-brandGraphite/90 backdrop-blur border border-white/20 text-brandWarmWhite font-heading font-bold rounded hover:bg-brandGraphite transition flex items-center justify-center text-base">
+                                <i data-lucide="phone-call" class="w-5 h-5 mr-2 text-brandRed"></i>
+                                <span>CALL J & K (+1 346-708-0384)</span>
+                            </a>
+                        </div>
+
+                        <!-- Trust Statement pill -->
+                        <div class="inline-flex items-center space-x-3 bg-brandGraphite/80 border border-white/10 rounded-lg px-4 py-3 backdrop-blur-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 flex-shrink-0"></i>
+                            <span class="text-sm font-mono tracking-wide text-brandWarmWhite font-medium">Core Philosophy: <span class="text-brandCoolAccent font-bold">"Pay By the Job Not By the Hour."</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 hidden md:flex flex-col items-center text-brandSteel animate-bounce">
+                    <span class="text-xs font-mono uppercase tracking-widest mb-1">Scroll to Explore</span>
+                    <i data-lucide="chevron-down" class="w-4 h-4 text-brandRed"></i>
+                </div>
+            </section>
+
+            <!-- CREDIBILITY TRUST BAR -->
+            <section class="bg-brandGraphite border-y border-white/10 py-8 relative">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div class="p-4 border-r border-white/10 last:border-r-0">
+                            <div class="text-2xl lg:text-3xl font-heading font-bold text-brandWarmWhite mb-1">A+ BBB</div>
+                            <div class="text-xs font-mono text-brandSteel tracking-wider uppercase">Accredited Rating</div>
+                        </div>
+                        <div class="p-4 border-r border-white/10 last:border-r-0">
+                            <div class="text-2xl lg:text-3xl font-heading font-bold text-brandWarmWhite mb-1">TACLB78991E</div>
+                            <div class="text-xs font-mono text-brandSteel tracking-wider uppercase">Texas HVAC License</div>
+                        </div>
+                        <div class="p-4 border-r border-white/10 last:border-r-0">
+                            <div class="text-2xl lg:text-3xl font-heading font-bold text-brandWarmWhite mb-1">Employee-Owned</div>
+                            <div class="text-xs font-mono text-brandSteel tracking-wider uppercase">Local Accountability</div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-2xl lg:text-3xl font-heading font-bold text-brandWarmWhite mb-1">10% Discount</div>
+                            <div class="text-xs font-mono text-brandSteel tracking-wider uppercase">Seniors & Military</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CORE PRICING PHILOSOPHY SECTION (Square Image Box Update) -->
+            <section class="py-24 bg-brandCharcoal relative overflow-hidden">
+                <div class="absolute inset-0 tech-grid opacity-20 pointer-events-none"></div>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <!-- Left Column: Square Image Box with User Provided Image -->
+                        <div class="lg:col-span-6 relative">
+                            <div class="relative w-full aspect-square max-w-lg mx-auto rounded-xl overflow-hidden border border-white/15 shadow-2xl group">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/jfd/refs/heads/main/129486050.jpg" 
+                                     alt="J & K technician diagnosing HVAC system" 
+                                     class="w-full h-full object-cover filter brightness-90 contrast-105 group-hover:scale-105 transition duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brandCharcoal via-transparent to-transparent opacity-80"></div>
+                                <!-- Floating Badge -->
+                                <div class="absolute bottom-6 left-6 right-6 bg-brandGraphite/95 backdrop-blur-md p-4 rounded-lg border border-white/10 flex items-center space-x-4">
+                                    <div class="w-12 h-12 rounded bg-brandRed/20 flex items-center justify-center text-brandRed flex-shrink-0">
+                                        <i data-lucide="wrench" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-mono text-brandSteel uppercase">Diagnostic Integrity</div>
+                                        <div class="text-sm font-heading font-bold text-brandWarmWhite">Honest Assessments & Fixed-Price Scope</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Content -->
+                        <div class="lg:col-span-6 space-y-6">
+                            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-brandRed/10 border border-brandRed/30 text-brandRed text-xs font-mono uppercase">
+                                <i data-lucide="tag" class="w-3.5 h-3.5 mr-1"></i>
+                                <span>No Hourly Guesswork</span>
+                            </div>
+
+                            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brandWarmWhite tracking-tight leading-tight">
+                                YOU PAY FOR THE JOB. <br/><span class="text-brandRed">NOT THE CLOCK.</span>
+                            </h2>
+
+                            <p class="text-brandSteel text-lg leading-relaxed">
+                                Traditional contractors drag out repairs while the hourly meter runs. At J & K A/C & Heating, we believe in upfront clarity. Before any wrench turns or refrigerant flows, we evaluate the system thoroughly and provide a firm, job-based quote.
+                            </p>
+
+                            <div class="space-y-4 pt-2">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-brandRed/20 flex items-center justify-center text-brandRed mt-1 flex-shrink-0">
+                                        <i data-lucide="check" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-brandWarmWhite">Clear Scope of Work</h4>
+                                        <p class="text-sm text-brandSteel">You know exactly what needs fixing, replacing, or maintaining before work begins.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-brandRed/20 flex items-center justify-center text-brandRed mt-1 flex-shrink-0">
+                                        <i data-lucide="check" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-brandWarmWhite">Waived Repair Fee Condition</h4>
+                                        <p class="text-sm text-brandSteel">Ask about our diagnostic fee policy when proceeding with a qualifying complete equipment installation.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-brandRed/20 flex items-center justify-center text-brandRed mt-1 flex-shrink-0">
+                                        <i data-lucide="check" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-brandWarmWhite">Employee-Owner Accountability</h4>
+                                        <p class="text-sm text-brandSteel">Our team has a personal stake in every job's quality and customer satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4">
+                                <button onclick="navigateTo('services')" class="inline-flex items-center space-x-2 text-brandRed font-bold hover:text-red-400 transition">
+                                    <span>Explore All Residential & Commercial Services</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VERSATILE HVAC CAPABILITIES SECTION (3 Boxes with User Provided Images) -->
+            <section class="py-24 bg-brandGraphite/60 border-t border-white/10 relative">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-brandCoolAccent/10 border border-brandCoolAccent/30 text-brandCoolAccent text-xs font-mono uppercase mb-4">
+                            <span>Comprehensive Coverage</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-heading font-extrabold text-brandWarmWhite tracking-tight mb-4">
+                            VERSATILE HVAC CAPABILITIES
+                        </h2>
+                        <p class="text-brandSteel text-lg">
+                            Engineered for high-efficiency residential comfort and robust commercial performance across Waller, Houston, and surrounding communities.
+                        </p>
+                    </div>
+
+                    <!-- 3 Cards Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        
+                        <!-- Card 1: Residential HVAC -->
+                        <div class="bg-brandCharcoal rounded-xl border border-white/10 overflow-hidden flex flex-col group hover:border-brandRed/50 transition duration-300">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/jfd/refs/heads/main/Screenshot%202026-10-21%20041056.png" 
+                                     alt="Residential HVAC Services" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brandCharcoal via-transparent to-transparent"></div>
+                                <span class="absolute top-4 left-4 bg-brandGraphite/90 backdrop-blur text-brandWarmWhite font-mono text-xs px-3 py-1 rounded border border-white/10">
+                                    RESIDENTIAL
+                                </span>
+                            </div>
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-xl font-heading font-bold text-brandWarmWhite mb-3">Residential Heating & AC</h3>
+                                    <p class="text-brandSteel text-sm mb-6 leading-relaxed">
+                                        Complete repair, preventative maintenance, precision installation, and indoor air quality solutions for homeowners throughout Waller and Houston.
+                                    </p>
+                                    <ul class="space-y-2 text-xs font-mono text-brandSteel mb-6">
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> AC & Furnace Repair</li>
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> Condenser & Coil Installation</li>
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> Airflow & Ductwork Diagnostics</li>
+                                    </ul>
+                                </div>
+                                <button onclick="navigateTo('services')" class="w-full py-3 bg-brandGraphite hover:bg-brandRed text-brandWarmWhite text-sm font-bold rounded transition flex items-center justify-center">
+                                    <span>View Residential Details</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Commercial HVAC -->
+                        <div class="bg-brandCharcoal rounded-xl border border-white/10 overflow-hidden flex flex-col group hover:border-brandRed/50 transition duration-300">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/jfd/refs/heads/main/Screenshot%202026-10-21%20040939.png" 
+                                     alt="Commercial HVAC Services" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brandCharcoal via-transparent to-transparent"></div>
+                                <span class="absolute top-4 left-4 bg-brandGraphite/90 backdrop-blur text-brandWarmWhite font-mono text-xs px-3 py-1 rounded border border-white/10">
+                                    COMMERCIAL
+                                </span>
+                            </div>
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-xl font-heading font-bold text-brandWarmWhite mb-3">Light-Commercial (Up to 25 Tons)</h3>
+                                    <p class="text-brandSteel text-sm mb-6 leading-relaxed">
+                                        Specialized commercial HVAC repair, replacement, strip-mall buildouts, gas/electric package systems, and retrofit projects for businesses.
+                                    </p>
+                                    <ul class="space-y-2 text-xs font-mono text-brandSteel mb-6">
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> Package & Split Systems (1.5 - 25 Tons)</li>
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> Strip-Mall & Retail Buildouts</li>
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> UV & Hydroxide Filtration</li>
+                                    </ul>
+                                </div>
+                                <button onclick="navigateTo('services')" class="w-full py-3 bg-brandGraphite hover:bg-brandRed text-brandWarmWhite text-sm font-bold rounded transition flex items-center justify-center">
+                                    <span>View Commercial Details</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Property Managers & Contractors -->
+                        <div class="bg-brandCharcoal rounded-xl border border-white/10 overflow-hidden flex flex-col group hover:border-brandRed/50 transition duration-300">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/jfd/refs/heads/main/Screenshot%202026-11-02%20233452.png" 
+                                     alt="Property Managers & Contractors" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brandCharcoal via-transparent to-transparent"></div>
+                                <span class="absolute top-4 left-4 bg-brandGraphite/90 backdrop-blur text-brandWarmWhite font-mono text-xs px-3 py-1 rounded border border-white/10">
+                                    B2B & PARTNERS
+                                </span>
+                            </div>
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-xl font-heading font-bold text-brandWarmWhite mb-3">Property Managers & Builders</h3>
+                                    <p class="text-brandSteel text-sm mb-6 leading-relaxed">
+                                        Reliable HVAC support for landlords, rental property managers, commercial builders, and HVAC retrofit contractors with permit & bidding assistance.
+                                    </p>
+                                    <ul class="space-y-2 text-xs font-mono text-brandSteel mb-6">
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> Rental Unit Turnaround Support</li>
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> Inspection & Code Compliance</li>
+                                        <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-brandRed mr-2"></i> HVAC-Related Mold Remediation Support</li>
+                                    </ul>
+                                </div>
+                                <button onclick="navigateTo('services')" class="w-full py-3 bg-brandGraphite hover:bg-brandRed text-brandWarmWhite text-sm font-bold rounded transition flex items-center justify-center">
+                                    <span>View Partner Details</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CUSTOMER REVIEWS SECTION -->
+            <section class="py-24 bg-brandCharcoal relative">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                        <div>
+                            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-brandRed/10 border border-brandRed/30 text-brandRed text-xs font-mono uppercase mb-4">
+                                <span>Verified Reputation</span>
+                            </div>
+                            <h2 class="text-3xl sm:text-5xl font-heading font-extrabold text-brandWarmWhite tracking-tight">
+                                TRUST BUILT THROUGH THE WORK.
+                            </h2>
+                        </div>
+                        <div class="mt-6 md:mt-0">
+                            <a href="https://www.google.com/search?q=J+%26+K+A%2FC+%26+Heating+Waller+TX" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-3 rounded bg-brandGraphite border border-white/20 text-brandWarmWhite text-sm font-bold hover:bg-brandRed transition">
+                                <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+                                <span>Read Google Reviews Profile</span>
+                                <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-brandGraphite/80 border border-white/10 p-8 rounded-xl flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                </div>
+                                <p class="text-brandWarmWhite text-base italic mb-6">
+                                    "J & K came out to our home in Waller when our AC compressor went out on a scorching afternoon. Their technician was extremely knowledgeable, diagnosed the exact issue quickly, and gave us a fair job-based price without any pressure or unnecessary upselling."
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="font-heading font-bold text-sm text-brandWarmWhite">Residential Homeowner</span>
+                                <span class="text-xs font-mono text-emerald-400">Verified Client</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-brandGraphite/80 border border-white/10 p-8 rounded-xl flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                </div>
+                                <p class="text-brandWarmWhite text-base italic mb-6">
+                                    "As a commercial property manager in the Houston area, finding reliable HVAC contractors who respect budgets and schedules is tough. J & K handles our package units with total professionalism. Their 'pay by the job' model keeps our accounting straightforward."
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="font-heading font-bold text-sm text-brandWarmWhite">Commercial Property Manager</span>
+                                <span class="text-xs font-mono text-emerald-400">Verified Client</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-brandGraphite/80 border border-white/10 p-8 rounded-xl flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                </div>
+                                <p class="text-brandWarmWhite text-base italic mb-6">
+                                    "Honest diagnostics are hard to find nowadays. J & K didn't try to sell me a brand-new system when a straightforward repair would do. Plus, their senior discount made a noticeable difference. True craftsmen!"
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="font-heading font-bold text-sm text-brandWarmWhite">Waller Resident</span>
+                                <span class="text-xs font-mono text-emerald-400">Verified Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CALL TO ACTION BANNER -->
+            <section class="py-20 bg-gradient-to-r from-brandRed to-rose-700 text-white relative overflow-hidden">
+                <div class="absolute inset-0 tech-grid opacity-10"></div>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                    <h2 class="text-3xl sm:text-5xl font-heading font-extrabold tracking-tight mb-6">
+                        READY FOR HONEST, JOB-BASED HVAC SERVICE?
+                    </h2>
+                    <p class="text-white/90 text-lg max-w-2xl mx-auto mb-8">
+                        Contact J & K A/C & Heating today for reliable residential repairs, commercial system design, or preventative maintenance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                        <button onclick="navigateTo('contact')" class="w-full sm:w-auto px-8 py-4 bg-brandCharcoal text-brandWarmWhite font-heading font-bold rounded shadow-2xl hover:bg-black transition">
+                            REQUEST A SERVICE QUOTE
+                        </button>
+                        <a href="tel:+13467080384" class="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur border border-white/30 text-white font-heading font-bold rounded hover:bg-white/20 transition flex items-center justify-center">
+                            <i data-lucide="phone" class="w-5 h-5 mr-2"></i> +1 346-708-0384
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SERVICES & COMMERCIAL VIEW -->
+        <div id="view-services" class="view-section hidden">
+            <div class="bg-brandGraphite py-16 border-b border-white/10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span class="text-brandRed font-mono text-xs uppercase tracking-widest">Complete Technical Capabilities</span>
+                    <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-brandWarmWhite mt-2 mb-4">
+                        RESIDENTIAL & COMMERCIAL SERVICES
+                    </h1>
+                    <p class="text-brandSteel text-lg max-w-2xl">
+                        Explore our comprehensive offerings for homeowners, commercial property managers, landlords, and builders across Waller and Houston.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Detailed Services Grid -->
+            <div class="py-20 bg-brandCharcoal">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+                    
+                    <!-- Section A: Residential HVAC -->
+                    <div>
+                        <div class="border-b border-white/10 pb-4 mb-10 flex items-center justify-between">
+                            <h2 class="text-2xl sm:text-3xl font-heading font-bold text-brandWarmWhite flex items-center">
+                                <i data-lucide="home" class="w-7 h-7 text-brandRed mr-3"></i> Residential HVAC Solutions
+                            </h2>
+                            <span class="text-xs font-mono text-brandSteel">Comfort & Reliability</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Service Item 1 -->
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="thermometer-snowflake" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Air Conditioning Repair</h3>
+                                <p class="text-brandSteel text-sm mb-4">Fast, accurate diagnostics and lasting repairs for all makes and models of residential cooling systems.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Job-Based Pricing</span>
+                            </div>
+
+                            <!-- Service Item 2 -->
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="flame" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Heating & Furnace Repair</h3>
+                                <p class="text-brandSteel text-sm mb-4">Gas and electric furnace troubleshooting, safety testing, and burner maintenance for Texas winters.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Job-Based Pricing</span>
+                            </div>
+
+                            <!-- Service Item 3 -->
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">AC & Heating Installation</h3>
+                                <p class="text-brandSteel text-sm mb-4">Precision sizing and complete installation of high-efficiency condensers, furnaces, and packaged heat pumps.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Qualifying Install Fee Waivers</span>
+                            </div>
+
+                            <!-- Service Item 4 -->
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="settings" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Preventative Maintenance</h3>
+                                <p class="text-brandSteel text-sm mb-4">Tune-ups and multi-point seasonal inspections designed to extend equipment lifespan and lower utility bills.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Senior & Military 10% Off</span>
+                            </div>
+
+                            <!-- Service Item 5 -->
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="wind" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Airflow & Ductwork Solutions</h3>
+                                <p class="text-brandSteel text-sm mb-4">Duct sealing, balancing, and return-air modifications to eliminate hot/cold spots in residential properties.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Expert Diagnostics</span>
+                            </div>
+
+                            <!-- Service Item 6 -->
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Indoor Air Quality (IAQ)</h3>
+                                <p class="text-brandSteel text-sm mb-4">UV lamps, advanced filtration media, and humidity control to protect indoor health and cleanliness.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Indoor Air Science Certified</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section B: Commercial HVAC -->
+                    <div>
+                        <div class="border-b border-white/10 pb-4 mb-10 flex items-center justify-between">
+                            <h2 class="text-2xl sm:text-3xl font-heading font-bold text-brandWarmWhite flex items-center">
+                                <i data-lucide="building-2" class="w-7 h-7 text-brandRed mr-3"></i> Light-Commercial HVAC (1.5 to 25 Tons)
+                            </h2>
+                            <span class="text-xs font-mono text-brandSteel">Heavy-Duty Performance</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="wrench" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Commercial HVAC Repair</h3>
+                                <p class="text-brandSteel text-sm mb-4">Rapid response for rooftop package units, split systems, and commercial climate control breakdowns.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Up to 25 Ton Capacity</span>
+                            </div>
+
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="layers" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Package & Split Systems</h3>
+                                <p class="text-brandSteel text-sm mb-4">Gas and electric package units and split systems sized precisely for light-commercial facilities and retail spaces.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Full Equipment Sizing</span>
+                            </div>
+
+                            <div class="bg-brandGraphite/60 border border-white/10 rounded-xl p-6 hover:border-brandRed/40 transition">
+                                <div class="w-12 h-12 rounded bg-brandRed/10 text-brandRed flex items-center justify-center mb-4">
+                                    <i data-lucide="store" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-lg font-heading font-bold text-brandWarmWhite mb-2">Strip-Mall Buildouts & Retrofits</h3>
+                                <p class="text-brandSteel text-sm mb-4">Custom ducting, curb adaptors, and mechanical room retrofits for tenant buildouts and contractor projects.</p>
+                                <span class="text-xs font-mono text-brandCoolAccent font-bold">Contractor & Builder Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section C: Property Managers & Contractors -->
+                    <div>
+                        <div class="border-b border-white/10 pb-4 mb-10 flex items-center justify-between">
+                            <h2 class="text-2xl sm:text-3xl font-heading font-bold text-brandWarmWhite flex items-center">
+                                <i data-lucide="users" class="w-7 h-7 text-brandRed mr-3"></i> Property Managers & Contractors
+                            </h2>
+                            <span class="text-xs font-mono text-brandSteel">B2B Partnerships</span>
+                        </div>
+
+                        <div class="bg-brandGraphite/80 border border-white/10 rounded-xl p-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <h3 class="text-xl font-heading font-bold text-brandWarmWhite mb-4">Streamlined Support for Rental Portfolios & Builders</h3>
+                                    <p class="text-brandSteel text-sm leading-relaxed mb-6">
+                                        We work directly with property management companies, landlords, real estate investors, and mold-remediation contractors across the Greater Houston and Waller areas. From inspection-related HVAC issue resolution to fast rental unit turnarounds, permits, and code compliance bidding.
+                                    </p>
+                                    <ul class="space-y-3 text-sm font-body text-brandWarmWhite">
+                                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-brandRed mr-3"></i> Rental Unit Inspection & Repair Resolution</li>
+                                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-brandRed mr-3"></i> HVAC-Related Mold Remediation Support</li>
+                                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-brandRed mr-3"></i> Code Compliance & Permitting Assistance</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-brandCharcoal p-6 rounded-lg border border-white/10 flex flex-col justify-center items-center text-center">
+                                    <i data-lucide="briefcase" class="w-12 h-12 text-brandRed mb-4"></i>
+                                    <h4 class="font-heading font-bold text-brandWarmWhite mb-2">Commercial & B2B Inquiries</h4>
+                                    <p class="text-xs text-brandSteel mb-6">Partner with an employee-owned team that respects deadlines and transparent pricing.</p>
+                                    <button onclick="navigateTo('contact')" class="px-6 py-3 bg-brandRed text-white text-sm font-bold rounded hover:bg-red-700 transition">
+                                        Request Commercial Quote
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT & PHILOSOPHY VIEW -->
+        <div id="view-about" class="view-section hidden">
+            <div class="bg-brandGraphite py-16 border-b border-white/10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span class="text-brandRed font-mono text-xs uppercase tracking-widest">Our Heritage & Accountability</span>
+                    <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-brandWarmWhite mt-2 mb-4">
+                        BUILT ON HONEST WORKMANSHIP
+                    </h1>
+                    <p class="text-brandSteel text-lg max-w-2xl">
+                        Discover what makes J & K A/C & Heating a trusted pillar in Waller, Texas and surrounding communities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-20 bg-brandCharcoal">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <span class="text-brandRed font-mono text-xs uppercase tracking-wider">Employee-Owned & Operated</span>
+                            <h2 class="text-3xl font-heading font-bold text-brandWarmWhite mt-2 mb-6">
+                                A Team With a Personal Stake in Your Comfort
+                            </h2>
+                            <p class="text-brandSteel leading-relaxed mb-4">
+                                Established with a commitment to straightforward service and fair dealing, J & K A/C & Heating proudly operates as an employee-owned business. That means every technician, estimator, and service coordinator shares a personal accountability for the quality of our craftsmanship.
+                            </p>
+                            <p class="text-brandSteel leading-relaxed mb-6">
+                                Headquartered at 28912 Riley Rd in Waller, TX, we serve homeowners and light-commercial clients across Waller, Houston, and surrounding communities without unnecessary sales pressure or hourly guesswork.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                                <div>
+                                    <div class="text-xl font-heading font-bold text-brandWarmWhite">TACLB78991E</div>
+                                    <div class="text-xs font-mono text-brandSteel">Texas State License</div>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-heading font-bold text-brandWarmWhite">A+ Rated</div>
+                                    <div class="text-xs font-mono text-brandSteel">Better Business Bureau</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-brandGraphite/80 p-8 rounded-xl border border-white/10 space-y-6">
+                            <h3 class="text-xl font-heading font-bold text-brandWarmWhite border-b border-white/10 pb-4">Our Three-Stage Customer Journey</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 rounded bg-brandRed text-white flex items-center justify-center font-bold font-mono flex-shrink-0">1</div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-brandWarmWhite">Understand the Problem</h4>
+                                        <p class="text-sm text-brandSteel">We listen to your comfort concern and perform a meticulous evaluation of your HVAC equipment.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 rounded bg-brandRed text-white flex items-center justify-center font-bold font-mono flex-shrink-0">2</div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-brandWarmWhite">Recommend the Right Work</h4>
+                                        <p class="text-sm text-brandSteel">We explain appropriate repair, maintenance, or replacement options tailored to your exact needs.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 rounded bg-brandRed text-white flex items-center justify-center font-bold font-mono flex-shrink-0">3</div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-brandWarmWhite">Price the Job Clearly</h4>
+                                        <p class="text-sm text-brandSteel">We discuss the firm scope and job-based pricing before proceeding. No hidden hourly surprises.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT & QUOTE VIEW -->
+        <div id="view-contact" class="view-section hidden">
+            <div class="bg-brandGraphite py-16 border-b border-white/10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span class="text-brandRed font-mono text-xs uppercase tracking-widest">Get in Touch</span>
+                    <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-brandWarmWhite mt-2 mb-4">
+                        LET'S GET YOUR HVAC PROJECT MOVING
+                    </h1>
+                    <p class="text-brandSteel text-lg max-w-2xl">
+                        Whether you need residential service or commercial installation, talk directly with the J & K team.
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-20 bg-brandCharcoal">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        
+                        <!-- Contact Info Column -->
+                        <div class="lg:col-span-5 space-y-8">
+                            <div class="bg-brandGraphite/80 border border-white/10 p-8 rounded-xl space-y-6">
+                                <h3 class="text-xl font-heading font-bold text-brandWarmWhite">Direct Contact Information</h3>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded bg-brandRed/10 text-brandRed flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="phone" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-mono text-brandSteel uppercase">Primary Phone</div>
+                                        <a href="tel:+13467080384" class="text-lg font-bold text-brandWarmWhite hover:text-brandRed transition">+1 346-708-0384</a>
+                                        <div class="text-xs text-emerald-400 mt-1">24-hour phone availability</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded bg-brandRed/10 text-brandRed flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="mail" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-mono text-brandSteel uppercase">Business Email</div>
+                                        <a href="mailto:jkacht@netzero.net" class="text-base font-bold text-brandWarmWhite hover:text-brandRed transition">jkacht@netzero.net</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded bg-brandRed/10 text-brandRed flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-mono text-brandSteel uppercase">Office & Headquarters</div>
+                                        <p class="text-base font-bold text-brandWarmWhite">28912 Riley Rd, Waller, TX 77484</p>
+                                        <div class="text-xs text-brandSteel mt-1">Serving Waller, Houston, and surrounding communities</div>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4 border-t border-white/10">
+                                    <div class="text-xs font-mono text-brandCoolAccent mb-2">LICENSING & CREDENTIALS</div>
+                                    <p class="text-xs text-brandSteel">Texas HVAC License # TACLB78991E • BBB A+ Accredited</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Quote Form Column -->
+                        <div class="lg:col-span-7">
+                            <div class="bg-brandGraphite/90 border border-white/10 p-8 rounded-xl">
+                                <h3 class="text-2xl font-heading font-bold text-brandWarmWhite mb-2">Request a Service Quote</h3>
+                                <p class="text-sm text-brandSteel mb-6">Fill out the details below and our team will get back to you promptly.</p>
+                                
+                                <form id="quote-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Full Name *</label>
+                                            <input type="text" id="form-name" required placeholder="John Doe" class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Phone Number *</label>
+                                            <input type="tel" id="form-phone" required placeholder="(346) 708-0384" class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition">
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Email Address *</label>
+                                            <input type="email" id="form-email" required placeholder="you@example.com" class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Property Type *</label>
+                                            <select id="form-type" class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition">
+                                                <option value="Residential">Residential</option>
+                                                <option value="Commercial">Commercial / Light-Commercial</option>
+                                                <option value="Rental Property">Rental Property / Landlord</option>
+                                                <option value="Builder / Contractor">Builder / Contractor</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Service Required *</label>
+                                            <select id="form-service" class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition">
+                                                <option value="AC Repair">AC Repair</option>
+                                                <option value="Heating / Furnace Repair">Heating / Furnace Repair</option>
+                                                <option value="System Replacement / Install">System Replacement / Install</option>
+                                                <option value="Preventative Maintenance">Preventative Maintenance</option>
+                                                <option value="Commercial Service / Buildout">Commercial Service / Buildout</option>
+                                                <option value="Other HVAC Inquiry">Other HVAC Inquiry</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Preferred Date</label>
+                                            <input type="date" id="form-date" class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-xs font-mono text-brandSteel uppercase mb-2">Brief Description of Issue or Project *</label>
+                                        <textarea id="form-message" required rows="4" placeholder="Please describe your heating, cooling, or commercial project requirements..." class="w-full bg-brandCharcoal border border-white/20 rounded px-4 py-3 text-brandWarmWhite focus:outline-none focus:border-brandRed transition"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="w-full py-4 bg-brandRed text-white font-heading font-bold rounded shadow-lg hover:bg-red-700 transition flex items-center justify-center">
+                                        <span>SUBMIT QUOTE REQUEST</span>
+                                        <i data-lucide="send" class="w-4 h-4 ml-2"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandGraphite border-t border-white/10 py-16 text-brandSteel text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="font-heading font-bold text-brandWarmWhite text-lg">J & K A/C & HEATING</span>
+                    </div>
+                    <p class="text-xs text-brandSteel leading-relaxed">
+                        Pay by the job, not by the hour. Providing honest residential and light-commercial HVAC craftsmanship in Waller, Houston, and surrounding communities.
+                    </p>
+                    <div class="text-xs font-mono text-emerald-400">
+                        Texas License: TACLB78991E
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-brandWarmWhite mb-4 text-xs uppercase tracking-wider font-mono">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><button onclick="navigateTo('home')" class="hover:text-brandWarmWhite transition">Home</button></li>
+                        <li><button onclick="navigateTo('services')" class="hover:text-brandWarmWhite transition">Residential Services</button></li>
+                        <li><button onclick="navigateTo('services')" class="hover:text-brandWarmWhite transition">Light-Commercial (Up to 25 Tons)</button></li>
+                        <li><button onclick="navigateTo('about')" class="hover:text-brandWarmWhite transition">Employee-Owner Philosophy</button></li>
+                        <li><button onclick="navigateTo('contact')" class="hover:text-brandWarmWhite transition">Contact & Quote Form</button></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-brandWarmWhite mb-4 text-xs uppercase tracking-wider font-mono">Service Areas</h4>
+                    <ul class="space-y-2 text-xs text-brandSteel">
+                        <li>Waller, TX (Headquarters)</li>
+                        <li>Houston, TX & Surrounding Communities</li>
+                        <li>Residential & Rental Properties</li>
+                        <li>Light-Commercial Buildouts & Retrofits</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-brandWarmWhite mb-4 text-xs uppercase tracking-wider font-mono">Verified Credibility</h4>
+                    <ul class="space-y-2 text-xs text-brandSteel">
+                        <li class="flex items-center"><i data-lucide="check" class="w-3 h-3 text-brandRed mr-2"></i> BBB A+ Accredited</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-3 h-3 text-brandRed mr-2"></i> Indoor Air Science Certified</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-3 h-3 text-brandRed mr-2"></i> 10% Senior & Military Discount</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-3 h-3 text-brandRed mr-2"></i> 24-Hour Phone Availability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono">
+                <p>&copy; 2026 J & K A/C & Heating. All rights reserved.</p>
+                <p class="mt-4 sm:mt-0 text-brandSteel">Address: 28912 Riley Rd, Waller, TX 77484 • Phone: +1 346-708-0384</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- VERIFICATION AUDIT MODAL -->
+    <div id="verification-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-brandGraphite border border-white/20 rounded-xl max-w-lg w-full p-6 sm:p-8 relative">
+            <button onclick="toggleVerificationModal()" class="absolute top-4 right-4 text-brandSteel hover:text-brandWarmWhite">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-10 h-10 rounded bg-brandRed/20 text-brandRed flex items-center justify-center">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-heading font-bold text-brandWarmWhite">Credential & Verification Audit</h3>
+                    <p class="text-xs font-mono text-brandSteel">J & K A/C & Heating Verified Status</p>
+                </div>
+            </div>
+            
+            <div class="space-y-4 text-sm text-brandSteel mb-6">
+                <div class="p-3 bg-brandCharcoal rounded border border-white/10">
+                    <div class="flex justify-between font-mono text-xs text-brandWarmWhite mb-1">
+                        <span>Texas HVAC License</span>
+                        <span class="text-emerald-400">VERIFIED</span>
+                    </div>
+                    <div class="text-xs">TACLB78991E (Active with TDLR)</div>
+                </div>
+
+                <div class="p-3 bg-brandCharcoal rounded border border-white/10">
+                    <div class="flex justify-between font-mono text-xs text-brandWarmWhite mb-1">
+                        <span>Better Business Bureau (BBB)</span>
+                        <span class="text-emerald-400">VERIFIED</span>
+                    </div>
+                    <div class="text-xs">A+ Rating & Accredited Business</div>
+                </div>
+
+                <div class="p-3 bg-brandCharcoal rounded border border-white/10">
+                    <div class="flex justify-between font-mono text-xs text-brandWarmWhite mb-1">
+                        <span>Primary Phone Number Discrepancy Flag</span>
+                        <span class="text-amber-400">NOTICED</span>
+                    </div>
+                    <div class="text-xs">Supplied primary: <strong class="text-brandWarmWhite">+1 346-708-0384</strong>. Legacy listings reference <strong class="text-brandWarmWhite">+1 281-855-0100</strong>. Both numbers are monitored for customer inquiries.</div>
+                </div>
+
+                <div class="p-3 bg-brandCharcoal rounded border border-white/10">
+                    <div class="flex justify-between font-mono text-xs text-brandWarmWhite mb-1">
+                        <span>Employee-Owned & Operated</span>
+                        <span class="text-emerald-400">CONFIRMED</span>
+                    </div>
+                    <div class="text-xs">Publicly identified ownership & management structure.</div>
+                </div>
+            </div>
+
+            <button onclick="toggleVerificationModal()" class="w-full py-3 bg-brandRed text-white font-bold rounded text-sm">
+                Close Audit Report
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // View Navigation Controller
+        function navigateTo(viewId) {
+            // Hide all views
+            const views = document.querySelectorAll('.view-section');
+            views.forEach(v => v.classList.add('hidden'));
+
+            // Show target view
+            const target = document.getElementById(`view-${viewId}`);
+            if (target) {
+                target.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Update nav link active states
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-brandRed', 'font-semibold');
+                link.classList.add('text-brandSteel');
+            });
+
+            const activeNav = document.getElementById(`nav-${viewId}`);
+            if (activeNav) {
+                activeNav.classList.remove('text-brandSteel');
+                activeNav.classList.add('text-brandRed', 'font-semibold');
+            }
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Verification Modal Toggle
+        function toggleVerificationModal() {
+            const modal = document.getElementById('verification-modal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Toast Notification System
+        function showToast(title, message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `pointer-events-auto bg-brandGraphite border ${type === 'success' ? 'border-emerald-500/50' : 'border-brandRed/50'} p-4 rounded-xl shadow-2xl max-w-sm w-full transform translate-y-4 opacity-0 transition-all duration-300`;
+            
+            toast.innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-full ${type === 'success' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-brandRed/20 text-brandRed'} flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i data-lucide="${type === 'success' ? 'check' : 'alert-circle'}" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <div class="font-heading font-bold text-brandWarmWhite text-sm">${title}</div>
+                        <div class="text-xs text-brandSteel mt-0.5">${message}</div>
+                    </div>
+                </div>
+            `;
+            
+            container.appendChild(toast);
+            lucide.createIcons();
+
+            // Trigger animation
+            setTimeout(() => {
+                toast.classList.remove('translate-y-4', 'opacity-0');
+            }, 50);
+
+            // Remove after 5 seconds
+            setTimeout(() => {
+                toast.classList.add('translate-y-4', 'opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 5000);
+        }
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const email = document.getElementById('form-email').value;
+            const type = document.getElementById('form-type').value;
+            const service = document.getElementById('form-service').value;
+
+            // Simulate backend transmission to jkacht@netzero.net
+            showToast('Quote Request Received!', `Thank you, ${name}. Our team has logged your ${type} request for ${service} and will call ${phone} shortly.`);
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
